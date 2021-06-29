@@ -1,0 +1,31 @@
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 12;
+    width: 4rem;
+    height: 1rem;
+    left: 1.3rem;
+    margin-top: 0.3rem;
+    cursor: pointer;
+}
+
+.rightarrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.rightarrow1 {
+    background-color: black;
+}
+
+.down_arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}

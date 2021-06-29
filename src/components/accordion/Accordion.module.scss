@@ -1,0 +1,45 @@
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 1.8rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline:none;
+    transition: 0.4s;
+
+    &:active {
+        background-color: #ccc;
+    }
+
+    &:hover {
+        background-color: #ccc;
+    }
+
+    &::after {
+        content: '\0271A';
+        font-size: 1.3rem;
+        color: #777;
+        float: right;
+        margin-left: .5rem;
+    }
+
+
+    &_panel {
+        padding: 0 1.8rem;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.4s ease-out;
+    }
+}
+
+.active:after {
+    content: "\2796";
+    font-size: 1.3rem;
+    color: #777;
+    float: right;
+    margin-left: .5rem;
+}
