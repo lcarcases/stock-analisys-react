@@ -16,3 +16,13 @@ export const Primary = () => {
                                     </div>
                                );
                              }
+
+export const Secondary = () => {
+                                let metricName = "Price:";
+                                let metricValue = "$ 13245.436"
+                                return (
+                                     <div className={styles.container}>
+                                         <Card metricName={metricName} metricValue={metricValue}></Card>
+                                     </div>
+                                );
+                              }
