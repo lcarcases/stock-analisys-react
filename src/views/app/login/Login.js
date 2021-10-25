@@ -48,7 +48,7 @@ class Login extends Component {
         if(!this.state.isLogin) {
             const res = await axios({
                                     method: 'post',
-                                    url: 'http://127.0.0.1:3000/api/v1/users/register/',
+                                    url: 'http://172.17.0.1:3000/api/v1/users/register/',
                                     data: {
                                       username: this.state.username,
                                       password: this.state.password,
