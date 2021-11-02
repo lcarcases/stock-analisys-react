@@ -57,7 +57,8 @@ class StockDetails extends Component {
                 this.setState({loading:true});
             }
             const res = await axios({
-                url: `http://127.0.0.1:3000/api/v1/stocks/stock-by-symbol?symbol=${this.state.symbol}`
+                //url: `http://127.0.0.1:3000/api/v1/stocks/stock-by-symbol?symbol=${this.state.symbol}`
+                url: `http://${process.env.REACT_APP_FRONTEND_APP_DOMAIN}:3000/api/v1/stocks/stock-by-symbol?symbol=${this.state.symbol}`
             });
 
             if(res.data.status === 'success') {

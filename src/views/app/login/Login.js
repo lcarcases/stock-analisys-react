@@ -32,7 +32,8 @@ class Login extends Component {
      }
 
      onLoginWithGoogle() {
-        window.location.assign('http://127.0.0.1:3000/api/v1/users/auth/google');
+        //window.location.assign('http://127.0.0.1:3000/api/v1/users/auth/google');
+        window.location.assign(`http://${process.env.REACT_APP_FRONTEND_APP_DOMAIN}:3000/api/v1/users/auth/google`);
      }
 
      onLoginWithFacebook() {

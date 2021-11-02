@@ -87,7 +87,8 @@ class Stocks extends Component {
         axios.defaults.withCredentials = true;
         const res = await axios({
                                   method: 'post',
-                                  url: 'http://127.0.0.1:3000/api/v1/stocks/all/',
+                                  //url: 'http://127.0.0.1:3000/api/v1/stocks/all/',
+                                  url: `http://${process.env.REACT_APP_FRONTEND_APP_DOMAIN}:3000/api/v1/stocks/all/`,
                                   //url: 'https://57407d327847.ngrok.io/api/v1/stocks/all/',
                                   data: {
                                     userRegistered: userRegistered
