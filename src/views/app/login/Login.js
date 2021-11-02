@@ -8,6 +8,7 @@ class Login extends Component {
 
      constructor(props) {
          super(props);
+         require('dotenv').config();
          this.state = {
              // Refers to login view
              isLogin: true,
@@ -49,7 +50,7 @@ class Login extends Component {
             const res = await axios({
                                     method: 'post',
                                     //url: 'http://172.17.0.1:3000/api/v1/users/register/',
-                                    url: 'http://process.env.local.FRONTEND_APP_DOMAIN:3000/api/v1/users/register/',
+                                    url: `http://${process.env.REACT_APP_FRONTEND_APP_DOMAIN}:3000/api/v1/users/register/`,
                                     data: {
                                       username: this.state.username,
                                       password: this.state.password,
@@ -67,7 +68,7 @@ class Login extends Component {
         } else {
             const res = await axios({
               method: 'post',
-              url: 'http://172.17.0.1:3000/api/v1/users/login/',
+              url: `http://${process.env.REACT_APP_FRONTEND_APP_DOMAIN}:3000/api/v1/users/login/`,
               data: {
                 username: this.state.username,
                 password: this.state.password
