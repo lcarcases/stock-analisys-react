@@ -1,0 +1,33 @@
+name: PR Workflow Scrapping Stocks
+
+on:
+  pull_request:
+    branches:
+      - master
+      - staging
+
+jobs:
+  app-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Configurando Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.3
+      - name: Mostrando rama actual
+        run: git branch
+      - name: Instalando las dependencias
+        run: npm ci
+      - name: Instalando las dependencias de desarrollo
+        run: npm install --save-dev jest
+      - name: Instalando enzyme
+        run: npm install --save-dev @wojtekmaj/enzyme-adapter-react-17
+      - name: Instalando enzyme to json
+        run: npm install --save-dev enzyme-to-json
+      - name: IP localhost
+        run: sudo ip addr
+      - name: IP localhost Docker
+        run: sudo ip addr show docker0
+      - name: Ejecutando las pruebas
+        run: npm run test

@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas Header debe de mostrar <Header /> correctamente 1`] = `
+<div
+  className="header"
+>
+  <div
+    className="stockName"
+    style={
+      Object {
+        "marginLeft": "5rem",
+      }
+    }
+  >
+    <h2>
+      <span>
+        STOCKS ANALYSIS APP  
+      </span>
+    </h2>
+  </div>
+  <div
+    className="searchComponent"
+    style={
+      Object {
+        "marginLeft": "-1.8rem",
+      }
+    }
+  >
+    <Search />
+  </div>
+  <div
+    className="user"
+  >
+    <h2>
+      <span
+        className="user__name"
+      >
+        lcarcases4
+      </span>
+    </h2>
+    <img
+      alt="avatar"
+      className="user__avatar"
+      src="empty-avatar.jpg"
+    />
+  </div>
+</div>
+`;
