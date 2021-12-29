@@ -8,9 +8,7 @@ import Header from '../../../components/header/Header';
 describe('Pruebas Header', () => {
     
     test('debe de mostrar <Header /> correctamente', () => {
-
         
-
         const test = true;
         const username = 'lcarcases4';
         const stockName = "STOCKS ANALYSIS APP  ";
