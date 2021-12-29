@@ -8,7 +8,7 @@ import Header from '../../../components/header/Header';
 describe('Pruebas Header', () => {
     
     test('debe de mostrar <Header /> correctamente', () => {
-
+        
         const test = true;
         const username = 'lcarcases4';
         const stockName = "STOCKS ANALYSIS APP  ";
@@ -36,6 +36,7 @@ describe('Pruebas Header', () => {
 
     test('debe de mostrar el subtitulo enviado por props', () => {
         
+        const p = "12345";
         const test = true;
         const username = 'lcarcases4';
         const stockName = "STOCKS ANALYSIS APP  ";
