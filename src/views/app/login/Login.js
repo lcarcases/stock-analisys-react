@@ -79,6 +79,7 @@ class Login extends Component {
            if(res.data.success) {
               console.log("Logged Succesfully");
               this.setState({logged: true, registeredUser: res.data.user});
+              sessionStorage.setItem('User',JSON.stringify(res.data.user[0]));
            } else {
               this.setState({logged: false});
            }

@@ -35,6 +35,10 @@ class DataGrid extends Component {
             responsiveMode = true;
         } */
 
+        if(window.innerWidth < 600 ) {
+            marginLeft = '2rem';
+        }
+
 		this.state = {
             modules: [InfiniteRowModelModule],
 			columnDefs: this.props.columnDefs,
