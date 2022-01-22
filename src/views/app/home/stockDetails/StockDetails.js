@@ -119,10 +119,10 @@ class StockDetails extends Component {
         let sideMenuStyles = {};
 
         if( this.state.selectedItem === 4 ) {
-            if(window.innerWidth > 375 && window.innerWidth <= 900) {
+            if(window.innerWidth > 500 && window.innerWidth <= 900) {
               containerStyles.width = '95rem';
-            } else if(window.innerWidth <= 375) {
-                containerStyles.width = '45rem';
+            } else if(window.innerWidth <= 500) {
+                containerStyles.width = '54rem';
             } else {
                 containerStyles.width = '92rem';
             }
