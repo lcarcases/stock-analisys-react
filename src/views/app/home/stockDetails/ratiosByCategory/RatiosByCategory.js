@@ -17,18 +17,18 @@ class RatiosByCategory extends Component {
 
          let responsiveDimentions = null;
 
-         if( window.innerWidth > 375 && window.innerWidth <= 900) {
+         if( window.innerWidth > 500 && window.innerWidth <= 900) {
              responsiveDimentions = {};
              responsiveDimentions.height = '19rem';
              responsiveDimentions.width  = '35rem';
              responsiveDimentions.marginLeft = '0rem';
          }
 
-         if(window.innerWidth <= 375) {
+         if(window.innerWidth <= 500) {
           responsiveDimentions = {};
           responsiveDimentions.height = '15rem';
           responsiveDimentions.width  = '45rem';
-          responsiveDimentions.marginLeft = '8rem';
+          responsiveDimentions.marginLeft = '5rem';
          }
 
          this.state = {

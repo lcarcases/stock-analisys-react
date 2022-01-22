@@ -14,12 +14,12 @@ class IncomeStatement extends Component {
 
         let responsiveDimentions = null;
 
-        if( window.innerWidth > 375 && window.innerWidth <= 900) {
+        if( window.innerWidth > 500 && window.innerWidth <= 900) {
           responsiveDimentions = {};
           responsiveDimentions.width  = '67rem';
         }
 
-        if(window.innerWidth <= 375) {
+        if(window.innerWidth <= 500) {
           responsiveDimentions = {};
           responsiveDimentions.width  = '45rem';
           responsiveDimentions.marginLeft = '4.4rem';
