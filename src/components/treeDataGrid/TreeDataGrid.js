@@ -100,7 +100,7 @@ class TreeDataGrid extends Component {
     };
 
     onRowClicked(e) {
-        if(this.state.onSelectedRow !== undefined && e.event.explicitOriginalTarget.localName === "input") {
+        if(this.state.onSelectedRow !== undefined && e.event.target.localName === "i") {
              this.state.onSelectedRow(e.data);
         }
     }
