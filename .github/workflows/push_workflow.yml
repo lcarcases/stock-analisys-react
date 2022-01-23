@@ -50,3 +50,6 @@ jobs:
                       cd /var/www/html/localhost/stock-analisys-react
                       git branch
                       git pull
+                      docker-compose down
+                      docker-compose build
+                      docker-compose up -d
